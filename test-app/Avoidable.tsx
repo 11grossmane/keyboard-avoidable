@@ -2,6 +2,7 @@ import * as React from 'react'
 import {
     Dimensions,
     Keyboard,
+    ScrollView,
     StyleProp,
     TouchableWithoutFeedback,
     View,
@@ -35,6 +36,7 @@ export const Avoidable: React.FC<AvoidableProps> = ({
     }, [])
 
     const getStyle = (str: string): StyleProp<ViewStyle> => {
+        console.log(touchable, str, 'tpucj', 'sdfs')
         if (keyboardHeight && touchable === str) {
             return {
                 zIndex: 2,
@@ -46,8 +48,9 @@ export const Avoidable: React.FC<AvoidableProps> = ({
         }
         return {}
     }
+    console.log('touchable', touchable)
     return (
-        <View style={containerStyle}>
+        <ScrollView contentContainerStyle={containerStyle} overScrollMode='always'>
             {!!keyboardHeight && !!touchable && (
                 <View
                     style={{
@@ -70,6 +73,7 @@ export const Avoidable: React.FC<AvoidableProps> = ({
                 return (
                     <TouchableWithoutFeedback
                         onFocus={() => {
+                            console.log('keyStr', keyStr)
                             setTouchable(keyStr)
                         }}
                     >
@@ -77,6 +81,6 @@ export const Avoidable: React.FC<AvoidableProps> = ({
                     </TouchableWithoutFeedback>
                 )
             })}
-        </View>
+        </ScrollView>
     )
 }
