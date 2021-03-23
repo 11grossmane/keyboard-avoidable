@@ -1,2 +1,2 @@
-import { Avoidable, AvoidableProps } from './Avoidable'
-export { Avoidable, AvoidableProps }
+import { Avoidable, AvoidableProps } from "./Avoidable";
+export { Avoidable, AvoidableProps };

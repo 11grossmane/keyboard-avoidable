@@ -1,6 +1,6 @@
 {
     "name": "keyboard-avoidable",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "keyboard avoidable item for react native",
     "repository": {
         "type": "git",
@@ -26,8 +26,8 @@
     "license": "ISC",
     "dependencies": {},
     "peerDependencies": {
-        "react": "^17.0.2",
-        "react-native": "^0.64.0"
+        "react": "16 || 17",
+        "react-native": ">=0.57"
     },
     "devDependencies": {
         "@types/node": "^13.13.42",
