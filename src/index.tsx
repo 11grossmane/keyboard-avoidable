@@ -1,2 +1,2 @@
-import { Avoidable, AvoidableProps } from '../test-app/Avoidable'
+import { Avoidable, AvoidableProps } from './Avoidable'
 export { Avoidable, AvoidableProps }
