@@ -1,41 +1,41 @@
 {
-    "name": "keyboard-avoidable",
-    "version": "1.0.8",
-    "description": "keyboard avoidable item for react native",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/11grossmane/rn-keyboard-avoidable.git"
-    },
-    "main": "./lib/index.js",
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run cleanbuild && prettier * --write"
-        }
-    },
-    "files": [
-        "lib"
-    ],
-    "scripts": {
-        "build": "tsc",
-        "clean": "rm -rf ./lib",
-        "cleanbuild": "npm run clean && npm run build",
-        "pub": "npm run clean && rm -rf node_modules && npm install && npm run build && npm publish"
-    },
-    "keywords": [],
-    "author": "11grossmane",
-    "license": "ISC",
-    "dependencies": {},
-    "peerDependencies": {
-        "react": "16 || 17",
-        "react-native": ">=0.57"
-    },
-    "devDependencies": {
-        "@types/node": "^13.13.42",
-        "@types/react-native": "^0.64.0",
-        "@types/redux": "^3.6.0",
-        "@types/typescript": "^2.0.0",
-        "husky": "^4.3.8",
-        "ts-node": "^8.9.0",
-        "typescript": "^3.8.3"
+  "name": "keyboard-avoidable",
+  "version": "1.0.8",
+  "description": "keyboard avoidable item for react native",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/11grossmane/rn-keyboard-avoidable.git"
+  },
+  "main": "./lib/index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run cleanbuild && prettier * --write"
     }
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf ./lib",
+    "cleanbuild": "npm run clean && npm run build",
+    "pub": "npm run clean && rm -rf node_modules && npm install && npm run build && npm publish"
+  },
+  "keywords": [],
+  "author": "11grossmane",
+  "license": "ISC",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "16 || 17",
+    "react-native": ">=0.57"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.42",
+    "@types/react-native": "^0.64.0",
+    "@types/redux": "^3.6.0",
+    "@types/typescript": "^2.0.0",
+    "husky": "^4.3.8",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.8.3"
+  }
 }
