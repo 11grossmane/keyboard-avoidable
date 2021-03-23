@@ -1,6 +1,6 @@
-# rn-keyboard-avoidable
+# keyboard-avoidable
 
--   avoidable list forms
+-   avoidable list forms for react native
 
 ## Basic Usage
 

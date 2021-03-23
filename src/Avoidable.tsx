@@ -1,13 +1,11 @@
 import React from 'react'
 import {
-    StyleProp,
-    ViewProps,
-    ViewStyle,
-    View,
-    StyleSheet,
+    Dimensions,
     Keyboard,
+    StyleProp,
     TouchableWithoutFeedback,
-    Dimensions
+    View,
+    ViewStyle
 } from 'react-native'
 
 const { width, height } = Dimensions.get('screen')
@@ -31,7 +29,7 @@ export const Avoidable: React.FC<AvoidableProps> = ({
         Keyboard.addListener('keyboardWillShow', (e) => {
             setKeyboardHeight(e.endCoordinates.height)
         })
-        Keyboard.addListener('keyboardDidHide', (e) => {
+        Keyboard.addListener('keyboardDidHide', () => {
             setKeyboardHeight(0)
         })
     }, [])
@@ -73,7 +71,7 @@ export const Avoidable: React.FC<AvoidableProps> = ({
                 let keyStr = child.key.toString()
                 return (
                     <TouchableWithoutFeedback
-                        onFocus={(e) => {
+                        onFocus={() => {
                             console.log('keyStr', keyStr)
                             setTouchable(keyStr)
                         }}

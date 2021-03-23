@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar'
 import React from 'react'
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import { TextInput } from 'react-native-paper'
-import { Avoidable } from 'rn-keyboard-avoidable'
+import { Avoidable } from 'rn/lib/src/index'
 
 export default function App() {
     return (
