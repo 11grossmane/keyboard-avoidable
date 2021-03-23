@@ -1,6 +1,6 @@
 {
     "name": "keyboard-avoidable",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "description": "keyboard avoidable item for react native",
     "repository": {
         "type": "git",
@@ -19,13 +19,14 @@
         "build": "tsc",
         "clean": "rm -rf ./lib",
         "cleanbuild": "npm run clean && npm run build",
-        "pub": "npm run clean && npm install && npm run build && npm publish"
+        "pub": "npm run clean && rm -rf node_modules && npm install && npm run build && npm publish"
     },
     "keywords": [],
     "author": "11grossmane",
     "license": "ISC",
-    "dependencies": {
-        "react": "^17.0.1",
+    "dependencies": {},
+    "peerDependencies": {
+        "react": "^17.0.2",
         "react-native": "^0.64.0"
     },
     "devDependencies": {
