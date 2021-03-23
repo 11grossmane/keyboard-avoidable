@@ -29,7 +29,7 @@ export const Avoidable: React.FC<AvoidableProps> = ({
     Keyboard.addListener("keyboardWillShow", (e) => {
       setKeyboardHeight(e.endCoordinates.height);
     });
-    Keyboard.addListener("keyboardDidHide", () => {
+    Keyboard.addListener("keyboardWillHide", () => {
       setKeyboardHeight(0);
     });
   }, []);
